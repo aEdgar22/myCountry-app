@@ -1,4 +1,16 @@
 header {
  
   height: 4rem;
+  border: 1px solid hsl(217, 11%, 45%);
+  box-shadow: 0px 0px 6px 4px #000000;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  
+}
+
+h1{
+  font-style: normal;
+  font-size: 16px;
+
 }
