@@ -1,0 +1,60 @@
+.countryCard__container {
+  margin-bottom: 2rem;
+  width: 100%;
+
+  display: flex;
+  position: relative;
+}
+
+.coutnryCard__picture-active {
+  width: 100%;
+  img {
+    width: 57%;
+    height: 7rem;
+    border-radius: 2px;
+  }
+}
+
+.countryCard__link {
+  text-decoration: none;
+  color: black;
+}
+
+.countryCard__data-info {
+  padding: 3% 0 4% 3%;
+  width: 55%;
+  border-radius: 4px;
+  box-shadow: -2px 0px 10px 0px lighten($color: #000000, $amount: 35);
+  position: absolute;
+  background: #fff;
+  left: 45%;
+  height: 7rem;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: -0.02rem;
+    color: #1b1b1b;
+  }
+}
+
+.CountryInfoItem__container p {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 22px;
+  color: #3d3d3d;
+}
+
+@media (min-width: 700px) {
+  .countryCard__container {
+    width: 20%;
+    margin-right: 4rem;
+  }
+
+  .coutnryCard__picture-active img {
+    height: 9.3rem;
+  }
+}

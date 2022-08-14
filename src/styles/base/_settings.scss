@@ -1,0 +1,9 @@
+$primary: hsl(45, 100%, 99%);
+$second: hsl(125, 31%, 85%);
+$card-container: rgb(255, 248, 248);
+
+:root{
+    --data-color-primary: #{$primary};
+    --data-color-second: #{$second};
+    --data-color-card-container: #{$card-container};
+}
