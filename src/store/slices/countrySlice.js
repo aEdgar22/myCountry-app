@@ -4,7 +4,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     countries: [],
     isLoading: false,
-    error: ""
+    errorMessage: "",
+    error: false
 } 
 
 const countrySlice = createSlice({
@@ -20,6 +21,7 @@ const countrySlice = createSlice({
     setCountries(state, action) {
       state.isLoading = false;
       state.countries = action.payload.countries;
+      state.errorMessage = action.payload.errorMessage;
       state.error = action.payload.error
     }
   },

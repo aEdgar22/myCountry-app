@@ -6,6 +6,7 @@ export const useDispatchCountryByName = (country) => {
 
    const dispatch = useDispatch();
 
+
    useEffect(() => {
        country && dispatch(getCountryByName(country))
    }, [country, dispatch]);

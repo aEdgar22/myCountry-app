@@ -11,21 +11,15 @@ export const CountryHomeScreen = () => {
 
   const [region, setRegion] = useState("");
 
-  
-
   useDispatchInitialCountries();
-
   useDispatchCountriesByRegion(region);
 
   return (
     <>
       <Header />
 
-      <main>
-     
-       
-          <section className="countryHome__main-content">
-
+      <main className="countryHome__main-content">
+  
             <div className="countryHome__searches-conatiner">
               <SeacrhInput setCountry={setCountry} />
               <SearchSelect setRegion={setRegion} />
@@ -34,7 +28,7 @@ export const CountryHomeScreen = () => {
             <div className="countryHome__wrapper">
               <CountryCard country = {country}/>
             </div>
-          </section>
+          
       </main>
     </>
   );

@@ -8,7 +8,7 @@ export const SearchSelect = ({ setRegion }) => {
   };
 
   return (
-    <select defaultValue={'DEFAULT'} className="searchSelect__select-region" onChange={selectHandler}>
+    <select defaultValue={'DEFAULT'} className="searchSelect__select-region animate__animated  animate__fadeIn" onChange={selectHandler}>
       <option value="DEFAULT" disabled className="option">Filter by Region</option>
       <option className="option" value="africa">
         Africa

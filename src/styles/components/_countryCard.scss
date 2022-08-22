@@ -1,61 +1,70 @@
 .countryCard__container {
+  display: flex;
+  height: 6.75rem;
   margin-bottom: 2rem;
   width: 100%;
-
-  display: flex;
-  position: relative;
 }
 
 .coutnryCard__picture-active {
-  width: 100%;
+  width: 47.5%;
   img {
-    width: 57%;
-    height: 7rem;
+    width: 100%;
+    height: 100%;
     border-radius: 2px;
   }
 }
 
-.countryCard__link {
-  text-decoration: none;
-  color: black;
-}
-
 .countryCard__data-info {
-  padding: 3% 0 4% 3%;
-  width: 55%;
   border-radius: 4px;
-  box-shadow: -2px 0px 10px 0px lighten($color: #000000, $amount: 35);
-  position: absolute;
-  background: #fff;
-  left: 45%;
-  height: 7rem;
-  
-
-  h3 {
-    font-size: 14px;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 22px;
-    letter-spacing: -0.02rem;
-    color: #1b1b1b;
-  }
+  box-shadow: -2px 0px 10px 0px lighten($color: #000000, $amount: 20);
+  background-color: hsl(0, 0%, 100%);
+  width: 53.75%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
 }
 
-.CountryInfoItem__container p {
+.countyCard__info-title{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+}
+
+.infoItem__text{
+  height: 22px;
   font-size: 12px;
   font-weight: 500;
-  font-style: normal;
   line-height: 22px;
-  color: #3d3d3d;
 }
 
-@media (min-width: 700px) {
-  .countryCard__container {
-    width: 20%;
-    margin-right: 4rem;
+.countryCard__link {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+@media only screen and (min-width: 700px) {
+  .countryCard__container{
+    width: 205px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 239px;
+    margin: 2rem auto;
+
   }
 
-  .coutnryCard__picture-active img {
-    height: 9.3rem;
+  .coutnryCard__picture-active{
+    width: 205px;
+    height: 135px;
   }
+
+  .countryCard__data-info {
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+    border: 1px solid lighten($color: #BAC0CA, $amount: 10);
+  }
+
 }

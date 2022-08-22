@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export const CountryInfoItem = ({subtitle, text}) => {
+export const CountryInfoItem = ({ subtitle, text }) => {
   return (
-    <div className='CountryInfoItem__container'>
-      
-      <p>{subtitle}: {text} </p>  
-
-    </div>
-  )
-}
+    <p className="infoItem__text">
+      {subtitle}: {text}
+    </p>
+  );
+};
